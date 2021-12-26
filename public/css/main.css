@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.main_menu{
+font-size: 3rem;
+background-color: var(--main-bg);
+
+}
+
+.navbar{
+    background-color: var(--main-bg);
+} 
+
+.navbar a{
+    font-size: 2.5rem;
+    color:#fff
+}
+
+.container-fluid .navbar-brand{
+    font-size: 3rem;
+}
+
+.container-fluid .navbar-brand .fa-snowflake{
+    animation: ro 1s linear infinite;
+    transition: all linear 2ms;
+}
+
+@keyframes ro{
+0%{
+transform: rotate(0deg);
+}
+100%{
+transform: rotate(360deg);
+}
+}
+
+.navbar-nav .nav-item{
+margin-left: 2rem;
+}
+
+.navbar-toggler{
+    color: ghostwhite;
+
+   
+}
+.navbar-toggler-item{
+    color: ghostwhite;
+}
+
+.fa-snowflake{
+    color:var(--main-color);
+}
+
+.main_header{
+    /* background-color: gold; */
+margin-top: 5rem;
+width: 100vw;
+height: 60vh;
+
+
+
+}
+
+.main_header_left{
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+
+
+}
+
+.main_header_left p{
+    display: block;
+    font-size: 2rem;
+    top:20%;
+    padding: 2rem;
+
+
+}
+#weat{
+    color: var(--main-color);
+}
+.main_header_left h1{
+font-size: 4rem;
+padding-bottom: 2rem;
+}
+
+.main_header_left a{
+    text-align: center;
+    font-size: 2rem;
+}
+.main_header_left a button{
+    padding: 5px 10px;
+    border-radius: 2rem;
+    box-shadow:5px 10px 15px gray ;
+    color:var(--main-color);
+    
+}
+.main_header_left a button:hover{
+    background:var(--main-color);
+    color:#fff;
+
+}
+
+.main_header_right{
+    width: 100%;
+    height: 60vh;
+
+}
+/* img{
+    width: 100%;
+    height: 60vh ;
+
+} */
+
+.carousel-item .active img{
+width: 100%;
+height: 100%;
+
+}
+
+@media(max-width:768px){
+ .main_header_left{
+     height: auto;
+     margin: 5rem 0;
+ }
+ .main_header_right{
+    height: auto;
+    margin: 3rem 0;
+}
+.navbar ul li:hover{
+    color: var(--main-color);
+}
+ .nav-item:hover{
+color: var(--main-color);
+}
+
+
+
+}
+footer{
+height: 8vh;
+background-color: var(--main-bg);
+width: 100vw;
+margin-top: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    margin-top: auto;
+}
+
+.main_content{
+    margin-top: 35px;
+    background-color: var(--main-bg);
+    
+    width:60vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+border-radius: 20px;
+
+
+}
+
+#cityInput{
+    background-color: var(--main-bg);
+    color: #fff;
+    width: 50vh;
+    height: 10vh;
+position: relative;
+font-size: 2.5rem;
+border: none;
+outline: none;
+}
+
+#search{width: 80px;
+padding: 5px 10px;
+background-color: var(--main-color);
+color: #fff;
+font-size: 2rem;
+/* position: absolute; */
+margin-left: auto;
+border-radius: 10px;
+position: absolute;
+right: 0%;
+
+
+}
+#search:hover{
+    color: var(--main-color);
+    background-color:#fff;
+    box-shadow: 2px 5px 10px whitesmoke;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 2rem;
+   
+}
+
+.container{
+    width: 100vh;
+    height: 100vw;
+    display: flex;
+
+justify-content: center;
+}
+
+.main_layer{border-radius: 5px;
+    background-color: var(--main-bg);
+    color: #fff;
+    width: 60vh;
+    height: 10vh;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+font-size: 2rem;
+}
+
+
+
+.top_layer{border-radius: 5px;
+    background-color: var(--main-bg);
+    color: #fff;
+    width: 60vh;
+    height: 30vh;
+    font-size: 2rem;
+    position: relative;
+}
+#output{
+    text-align: center;
+   padding: 5px;
+}
+.data.hide_data{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+width: 100%;
+height: 100%;
+visibility: hidden;
+}
+#temp_status{
+    position: absolute;
+    right: 10%;
+    bottom:5%;
+    margin-top: 10%;
+}
+#result{
+    position: absolute;
+    font-size: 4rem;
+    left: 5%;
+    margin-top: 10%;
+}
+#sup{ position: absolute;
+    font-size: 4rem;
+    left: 35%;
+    margin-top: 10%;
+}
+
+ .fas.fa-cloud{
+font-size: 50px;
+animation: anime 2s linear infinite alternate-reverse;
+}
+@keyframes anime{
+    0%{
+transform:scale(1) ;
+    }
+    100%{
+        transform:scale(1.4);
+    }
+
+}
+
+.fas.fa-sun{
+    font-size: 50px;
+    animation: anime 2s linear infinite alternate-reverse;
+    }
+    @keyframes anime{
+        0%{
+    transform:scale(1) ;
+        }
+        100%{
+            transform:scale(1.4);
+        }
+    
+    }
+
+    .fas .fa-cloud-rain{
+        font-size: 50px;
+        animation: anime 2s linear infinite alternate-reverse;
+        }
+        @keyframes anime{
+            0%{
+        transform:scale(1) ;
+            }
+            100%{
+                transform:scale(1.4);
+            }
+        
+        }
+
+@media(max-width:412px){
+
+    .main_content{
+        
+        padding-left:10px ;
+        width: 50vh;
+        margin:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    padding-right: 60px;
+    }
+    #cityInput{
+        width: 40vh;
+        margin: auto ;
+
+    }
+    #search{
+        right: 15%;
+    }
+
+    #result{
+        left: 15%;
+    }
+    #temp_status{
+      right: 35%;
+      bottom: 30%;
+    }
+    ::placeholder{
+        margin-left: 10px;
+    }
+
+}
+
+
+@media(max-width:414px){
+
+    .main_content{
+        
+        padding-left:10px ;
+        width: 50vh;
+        margin: auto  ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    padding-right: 60px;
+    }
+    #cityInput{
+        width: 40vh;
+        margin: auto ;
+    }
+    #search{
+        right: 5%;
+    }
+
+    #result{
+        left: 15%;
+    }
+    #temp_status{
+      right: 35%;
+      bottom: 30%;
+    }
+
+
+}
+
+@media(max-width:428px){
+
+    .main_content{
+        
+        padding-left:10px ;
+        width: 50vh;
+        margin: auto  ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    padding-right: 60px;
+    }
+    #cityInput{
+        width: 40vh;
+        margin: auto ;
+    }
+    #search{
+        right: 5%;
+    }
+
+    #result{
+        left: 15%;
+    }
+    #temp_status{
+      right: 35%;
+      bottom: 30%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
